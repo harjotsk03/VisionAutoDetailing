@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: main;
+    src: url(./THE\ BOLD\ FONT\ -\ FREE\ VERSION\ -\ 2023.otf);
+}
+
+@font-face {
+    font-family: mainLight;
+    src: url(./CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: icons;
+    src: url(./Social\ Media\ Circled.ttf);
+}
+
+body {
+    overflow: hidden;
+    background-image: url(backgroundImage.webp);
+}
+
+.iconContainer{
+    display: table-row;
+    margin-top: 5vh;
+}
+
+a{
+    font-family: icons;
+    margin: 2vw;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.maintenanceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.maintenanceTextHeader {
+    font-family: main;
+    color: white;
+    font-size: 10vw; /* Adjust font size for responsiveness */
+    text-align: center;
+    margin: 1vw;
+    padding-top: 50px;
+}
+
+.maintenanceText {
+    font-size: 1.5vw; /* Adjust font size for responsiveness */
+    color: white;
+    line-height: 1.5;
+    font-family: mainLight;
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    width: 40%; /* Adjust the width for responsiveness */
+    margin-top: 0px; /* Adjust margin for responsiveness */
+    margin-bottom: 30px; /* Adjust margin for responsiveness */
+}
+
+.line {
+    flex-grow: 1;
+    height: 0.3vh;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.break {
+    margin: 0 10px; /* Adjust the margin for responsiveness */
+}
+
+.image-in-line {
+    height: 4vh; /* Adjust height for responsiveness */
+}
+
+#barContainer {
+    width: 60vw;
+    position: relative; /* Set the container as a positioning context */
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+#bar1 {
+    height: 2.5vh;
+    background-color: gray;
+}
+
+#bar2 {
+    height: 2.5vh;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute; /* Position bar2 relative to the #barContainer */
+    top: 0;
+    left: 0;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 600px) {
+    .maintenanceTextHeader {
+        font-size: 12vw;
+    }
+
+    .maintenanceText {
+        font-size: 2.5vw;
+    }
+
+    .line-container {
+        width: 40%;
+        margin-top: -20px;
+        margin-bottom: 15px;
+    }
+
+
+    #barContainer {
+        width: 60vw;
+        position: relative; /* Set the container as a positioning context */
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    #bar1 {
+        height: 1.2vh;
+        background-color: gray;
+    }
+
+    #bar2 {
+        height: 2.5vh;
+        width: 80%;
+        background-color: white;
+        position: absolute; /* Position bar2 relative to the #barContainer */
+        top: 0;
+        left: 0;
+    }
+}
